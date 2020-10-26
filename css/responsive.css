@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* 959px以下に適用されるCSS（タブレット用） */
+
+@media screen and (max-width: 959px) {
+  h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 100px;
+  }
+  h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 100px;
+  }
+  p {
+    font-size: 1rem;
+    color: #333;
+  }
+  li {
+    color: #333;
+    font-size: 1.2rem;
+  }
+  .text-top {
+    margin-top: 70px;
+  }
+  /* <!-- ----------------------- cloud ---------------------- --> */
+  .cloud-left {
+    width: 330px;
+    height: auto;
+    position: fixed;
+    top: 500px;
+    left: 0;
+    z-index: -1;
+  }
+  .cloud-right {
+    width: 330px;
+    height: auto;
+    position: fixed;
+    top: -200px;
+    right: -10px;
+    z-index: 1;
+  }
+  /* <!-- -------------------- cloud END --------------------- --> */
+  /* <!-- ----------------------- sub ---------------------- --> */
+  .sub {
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+  /* <!-- ------------------- sub END---------------------- --> */
+  /* <!-- ---------------------- profile ---------------------- --> */
+  .profile {
+    width: 80%;
+    position: relative;
+  }
+  .profile img {
+    width: 450px;
+  }
+  .profile li {
+    font-size: 1.2rem;
+  }
+  .profile img {
+    width: 400px;
+    -webkit-transform: rotate(5deg);
+    position: absolute;
+    top: -70px;
+    left: 45%;
+  }
+  /* <!-- ------------------- profile END---------------------- --> */
+  /* <!-------------------------- work ------------------------> */
+  .web-portfolio {
+    width: 80%;
+  }
+  /* ------ photoshopr  illustrator trace ------ */
+  .illustrator, .photoshop, .trace {
+    width: 80%;
+  }
+  .i-portfolio p, .p-portfolio p, .t-portfolio p {
+    margin: 30px 5px 0;
+  }
+  .thumb {
+    width: 270px;
+    transition: .3s;
+    cursor: pointer;
+  }
+  /* <!-- ------------------- work END---------------------- --> */
+  /* <!-- ---------------------- blog ---------------------- --> */
+  .blog {
+    width: 80%;
+    margin: 0 0 0 auto;
+    margin-top: 300px;
+  }
+  .blog img {
+    width: 90%;
+  }
+  /* <!-- ------------------- blog END---------------------- --> */
+  /* <!-- ---------------------- header ---------------------- --> */
+  header img {
+    width: 100%;
+    height: 250%;
+    margin-top: 300px;
+  }
+  /* <!-- ------------------- header END---------------------- --> */
+  /* <!-- ---------------------- dialog ---------------------- --> */
+  dialog {
+    width: 90%;
+  }
+  .dialog-content {
+    display: block;
+  }
+  .dialog-content img {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .dialog-text h3 {
+    /* margin-top: 10px; */
+    font-size: 1rem;
+  }
+  .work h3 {
+    border-left: solid 15px#333;
+    padding: 2px 5px 2px;
+  }
+  .dialog-text p {
+    margin: 0;
+  }
+  .thumb img {
+    width: 200px;
+  }
+  /* <!-- ------------------- dialog END 
+---------------------- --> */
+  /* ------------------------------太陽と月  --------------------------  */
+  .circle img {
+    width: 200px;
+    height: 200px;
+  }
+  /* 太陽が周回する */
+  .sun {
+    /* 円周の大きさ！ */
+    width: 40%;
+    height: 80%;
+  }
+  /* 月が周回する */
+  .moon {
+    width: 60%;
+    height: 80%;
+  }
+  /* top */
+  .top {
+    /* 一周100秒を、無限に繰り返す */
+    animation: rotate_top 100s linear infinite;
+  }
+  /* ------------------------------太陽と月 END----------------------------  */
+  /* 480px以下に適用されるCSS（スマホ用） */
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 1.3rem;
+      color: #333;
+    }
+    h3 {
+      font-size: 1rem;
+      color: #333;
+      margin-top: 70px;
+    }
+    h4 {
+      font-size: 0.8rem;
+      color: white;
+      margin-top: 40px;
+    }
+    p {
+      font-size: 0.8rem;
+      color: #333;
+    }
+    li {
+      color: #333;
+      font-size: 1rem;
+    }
+    .text-top {
+      margin-top: 30px;
+    }
+    /* <!-- ----------------------- cloud ---------------------- --> */
+    .cloud-left {
+      width: 200px;
+      height: auto;
+      position: fixed;
+      top: 400px;
+      left: 0;
+      z-index: -1;
+    }
+    .cloud-right {
+      width: 200px;
+      height: auto;
+      position: fixed;
+      top: -100px;
+      right: -10px;
+      z-index: 1;
+    }
+    /* <!-- -------------------- cloud END --------------------- --> */
+    /* <!-- ---------------------- main ---------------------- --> */
+    .main h1 {
+      font-size: 2rem;
+      padding-top: 300px;
+      padding-bottom: 300px;
+    }
+    /* <!-- ------------------- main END -------------------- --> */
+    /* <!-- ----------------------- sub ---------------------- --> */
+    .sub {
+      margin-top: 0;
+      margin-bottom: 200px;
+    }
+    /* <!-- ------------------- sub END---------------------- --> */
+    /* <!-- ---------------------- profile ---------------------- --> */
+    .profile {
+      width: 85%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .profile li {
+      font-size: 0.8rem;
+    }
+    .profile img {
+      width: 200px;
+      -webkit-transform: rotate(5deg);
+      position: absolute;
+      top: -70px;
+      left: 45%;
+    }
+    /* <!-- ------------------- profile END---------------------- --> */
+    /* <!-- ----------------------- vision ---------------------- --> */
+    .vision {
+      margin-top: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* <!-- -------------------- vision END ------------------ --> */
+    /* <!-- ------------------ work -------------------- --> */
+    .i-portfolio p, .p-portfolio p, .t-portfolio p {
+      margin: 10px 5px 0;
+    }
+    /* <!-- ------------------- work END---------------------- --> */
+    /* <!-- ---------------------- blog ---------------------- --> */
+    .blog {
+      width: 85%;
+      margin: 0 0 0 auto;
+      margin-top: 200px;
+    }
+    .blog img {
+      width: 100%;
+    }
+    .btn, a.btn, button.btn {
+      font-size: 1rem;
+      padding: 10px;
+      font-weight: 300;
+      width: 90%;
+    }
+    /* <!-- ------------------- blog END---------------------- --> */
+    /* <!-- ---------------------- footer ---------------------- --> */
+    footer img {
+      margin-top: 300px;
+    }
+    /* <!-- ------------------- footer END---------------------- --> */
+    /* <!-- ---------------------- dialog ---------------------- --> */
+    dialog {
+      width: 90%;
+    }
+    .dialog-content img {
+      width: 80%;
+    }
+    .image-box {
+      margin: 0 auto;
+    }
+    .dialog-text h3 {
+      /* margin-top: 10px; */
+      font-size: 1rem;
+    }
+    .work h3 {
+      border-left: solid 15px#333;
+      padding: 2px 5px 2px;
+    }
+    .dialog-text p {
+      margin: 0;
+    }
+    /* <!-- ------------------- dialog END ---------------------- --> */
+    /* -------------------------- 太陽と月  ------------------------  */
+    .circle img {
+      width: 120px;
+      height: 120px;
+    }
+    /* ------------------------- 太陽と月 END -----------------------  */
+  }
