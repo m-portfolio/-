@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+* {
+  color: white;
+  font-family: 'Balsamiq Sans', cursive,'M PLUS Rounded 1c';
+  text-decoration: none;
+}
+
+.container {
+  background-color:rgba(255,255,255,0.5);
+  /* margin-top: 200px; */
+  /* margin-bottom: 200px; */
+  padding: 50px;
+}
+
+
+
+
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 100px;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 100px;
+}
+
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+li {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.text-top {
+  margin-top: 70px;
+}
+
+
+.radius {
+  border-radius: 10px;
+}
+
+/* <!-- ----------------------- cloud ---------------------- --> */
+/* 雲の動き */
+.animate__pulse {
+  /* ５秒かけて動く */
+  animation-duration: 5s;
+  /* 永遠に繰り返す */
+  animation-iteration-count: infinite;
+}
+
+
+
+.main {
+  position: relative;
+}
+.cloud-left {
+  width: 500px;
+  height: auto;
+  position: fixed;
+  top: 350px;
+  left: 0;
+  z-index: -1;
+}
+
+.cloud-right  {
+  width: 500px;
+  height: auto;
+  position: fixed;
+  top: -280px;
+  right: -10px;
+  z-index: 1;
+} 
+/* <!-- -------------------- cloud END --------------------- --> */
+
+/* <!-- ----------------------- main ---------------------- --> */
+.main h1 {
+  text-align: center;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  font-size: 3rem;
+  color: white;
+}
+
+/* <!-- ------------------- main END---------------------- --> */
+/* <!-- ----------------------- sub ---------------------- --> */
+.sub {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+/* <!-- ------------------- sub END---------------------- --> */
+/* <!-- ---------------------- profile ---------------------- --> */
+.profile {
+  width: 60%;
+  margin-top: 400px;
+  margin-bottom: 400px;
+}
+
+.profile .container {
+  padding-bottom: 100px;
+}
+
+.img-position {
+  position: relative;
+}
+
+.profile img {
+  width: 500px;
+  -webkit-transform: rotate(5deg);
+  position:absolute;
+  top: -70px;
+  left:60%;
+}
+
+
+/* <!-- ------------------- profile END---------------------- --> */
+
+
+/* <!-- ----------------------- vision ---------------------- --> */
+.vision {
+  width: 100%;
+  text-align: center;
+  margin-top: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* <!----------- 三角形▼ ------------> */
+.san_box {
+  background: rgba(255,255,255,0.5);
+  position: relative;
+  margin: 0 0 60px;
+}
+.san_box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 60px 50vw 0 50vw;
+  border-color: rgba(255,255,255,0.5) transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+/* <!----------- 三角形▼ END ------------> */
+/* <!--------------------- vision END------------------------> */
+/* <!-------------------------- work ------------------------> */
+.work {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.web-portfolio {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.web-portfolio img {
+  width: 100%;
+}
+
+
+.web-portfolio img:hover {
+  transition: .3s;
+  filter: grayscale(80%);
+ }
+
+.work h2 {
+  color: white;
+}
+
+.work h3, .work h4, .work p {
+  text-align: left;
+}
+
+.work h3 {
+  border-left: solid 20px#333;
+  padding: 10px;
+}
+
+.work p {
+  color: white;
+}
+
+
+
+/* ----------- photoshopr  illustrator trace ------------ */
+
+.illustrator, .photoshop, .trace {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.illustrator-flex, .photoshop-flex, .trace-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ 
+.i-portfolio, .p-portfolio, .t-portfolio {
+  margin: 30px 10px 0;
+}
+
+.i-portfolio p, .p-portfolio p, .t-portfolio p {
+  color: #fff;
+}
+
+
+
+.illustrator h3, .photoshop h3, .trace h3 {
+  border-left: solid 20px #333;
+  padding: 10px;
+}
+
+/* <!-- ------------------- work END---------------------- --> */
+/* <!-- ---------------------- blog ---------------------- --> */
+
+.blog {
+  width: 60%;
+  margin: 0 0 0 auto;
+  margin-top: 300px;
+}
+
+.blog img{
+  width: 60%;
+}
+/* <!-- ------------------- blog END---------------------- --> */
+
+
+.humburger nuv img {
+  width: 80%;
+}
+
+
+
+.profile li {
+  color: #333;
+}
