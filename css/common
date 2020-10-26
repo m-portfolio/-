@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/* animaition */
+.animate__bounce {
+  /* 2回繰り返す */
+  animation-iteration-count: 2;
+}
+
+
+/* fade in */
+.sa {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+.sa--up {
+  transform: translate(0, 100px);
+}
+
+
+
+
+
+
+
+/* ----------------------------body--------------------------------  */
+body { margin: 0; }
+
+body{
+
+  /* 背景グラデーション */
+  background: -moz-linear-gradient(top,
+  #C7D0E3,
+  #C7D0E3 30%,
+  #E7B39E 40%,
+  #94A2C2 50%,
+  #8599B3 60%,
+  #8599B3 );
+
+  background: -webkit-linear-gradient(top,
+  #C7D0E3,
+  #C7D0E3 30%,
+  #E7B39E 40%,
+  #94A2C2 50%,
+  #8599B3 60%,
+  #8599B3 );
+
+  background: linear-gradient(to bottom,
+  #C7D0E3,
+  #C7D0E3 30%,
+  #E7B39E 40%,
+  #94A2C2 50%,
+  #8599B3 60%,
+  #8599B3 );
+
+  /* background-color: #C7D0E3;
+  */
+  
+
+  /* 横スクロール禁止 */
+    overflow-x:hidden;
+    overflow-y:auto;
+  } 
+/* -------------------------------body END-------------------------------  */
+
+/* ---------------------------------太陽と月-------------------------------  */
+  
+    /* 太陽が周回する */
+    .sun {
+      /* 円周の大きさ！ */
+      width: 80%; 
+      height: 90%;
+      position: fixed;
+      left: 44%;
+      top: 100%;
+    
+      z-index: -1;
+    }
+    
+      /* 月が周回する */
+    .moon {
+      width: 80%; 
+      height: 90%;
+      position: fixed;
+      left: 44%;
+      top: 100%;
+    
+      z-index: -1;
+    }
+    
+    
+    
+    
+      /* top */
+    .top { 
+      /* 一周150秒を、無限に繰り返す */
+      animation: rotate_top 150s linear infinite;
+    }
+      /* rotate_topという、アニメーションの設置 */
+    @keyframes rotate_top { 
+      /* 開始時 */
+      0% { 
+       transform: rotate(0deg) translateY(-100%) rotate(0deg);
+      }
+      /* 終了時 */
+        100% {  
+        transform: rotate(360deg) translateY(-100%) rotate(-360deg);
+      }
+    }
+    
+    
+    
+      /* bottom */
+    .bottom { 
+      animation: rotate_bottom 150s linear infinite;
+    }
+    @keyframes rotate_bottom { 
+      0% { 
+       transform: rotate(0deg) translateY(100%) rotate(0deg);
+      }
+        100% {  
+        transform: rotate(360deg) translateY(100%) rotate(-360deg);
+      }
+    }
+  
+    
+    .circle img {
+      width: 250px;
+      height: 250px;
+    }
+  /* ------------------------------太陽と月 END----------------------------  */
+/* ----------------------------ハンバーガーメニュー----------------------  */
+/*　ハンバーガーボタン　*/
+.hamburger {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  right : 30px;
+  top   : 10px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 50px;
+  height  : 2px ;
+  left    : 6px;
+  background : #555;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 25px;
+}
+.hamburger span:nth-child(3) {
+  top: 40px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  background :#fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background :#fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+  
+/* リンクを無効にする */
+  pointer-events: none;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+}
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+nav.globalMenuSp ul li:hover{
+  background :#ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #fff;
+  padding: 1em 0;
+  text-decoration :none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+
+  /* リンクを有効にする */
+  pointer-events: auto;
+}
+
+
+.menu-img {
+  width: 40%;
+}
+
+nav.globalMenuSp li a:hover {
+  color: #333;
+}
+
+.menu-blog {
+  color: #fff;
+}
+
+.menu-blog:hover {
+  color: #333;
+}
+
+
+/* -------------------------ハンバーガーメニュー END------------------------  */
+/* <!-- ---------------------- footer ---------------------- --> */
+footer img {
+  width: 100%;
+  margin-top: 500px;
+}
+/* <!-- ------------------- footer END---------------------- --> */
