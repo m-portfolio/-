@@ -78,13 +78,22 @@
   .illustrator, .photoshop, .trace {
     width: 80%;
   }
-  .i-portfolio p, .p-portfolio p, .t-portfolio p {
-    margin: 30px 5px 0;
+  
+
+  .illustrator-flex, .photoshop-flex, .trace-flex {
+    flex-wrap: wrap;
   }
-  .thumb {
-    width: 270px;
-    transition: .3s;
-    cursor: pointer;
+  .content {
+    width:40%;
+  }
+  .js-modal-open img {
+    width: 100%;
+  }
+  .modal__content {
+    width: 85%;
+  }
+  .modal h3 {
+    font-size: 1rem;
   }
   /* <!-- ------------------- work END---------------------- --> */
   /* <!-- ---------------------- blog ---------------------- --> */
