@@ -25,15 +25,12 @@ h2 {
 h3 {
   font-size: 2rem;
   color: #333;
-  margin-top: 100px;
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: white;
-  margin-top: 100px;
 }
-
 
 p {
   font-size: 1.2rem;
@@ -48,7 +45,6 @@ li {
 .text-top {
   margin-top: 70px;
 }
-
 
 .radius {
   border-radius: 10px;
@@ -163,16 +159,38 @@ li {
 }
 /* <!----------- 三角形▼ END ------------> */
 /* <!--------------------- vision END------------------------> */
+
 /* <!-------------------------- work ------------------------> */
 .work {
   margin-top: 300px;
   text-align: center;
 }
 
+.work p {
+  color: white;
+}
+
+
+
+
+/* <!------------- WEB --------------> */
+
 .web-portfolio {
   width: 60%;
   margin: 0 auto;
 }
+
+.web-portfolio h3 {
+  border-left: solid 15px #333;
+  padding: 2px 5px;
+  margin-top: 120px;
+}
+
+.web-portfolio h4{
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
 
 .web-portfolio img {
   width: 100%;
@@ -184,52 +202,43 @@ li {
   filter: grayscale(80%);
  }
 
-.work h2 {
-  color: white;
-}
 
-.work h3, .work h4, .work p {
-  text-align: left;
-}
+/* <!----------- WEB END ------------> */
 
-.work h3 {
-  border-left: solid 20px#333;
-  padding: 10px;
-}
-
-.work p {
-  color: white;
-}
-
-
-
-/* ----------- photoshopr  illustrator trace ------------ */
+/* <!--------- illustrator ----------> */
 
 .illustrator, .photoshop, .trace {
   width: 60%;
   margin: 0 auto;
 }
 
-.illustrator-flex, .photoshop-flex, .trace-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
- 
-.i-portfolio, .p-portfolio, .t-portfolio {
-  margin: 30px 10px 0;
-}
-
-.i-portfolio p, .p-portfolio p, .t-portfolio p {
-  color: #fff;
-}
-
-
-
 .illustrator h3, .photoshop h3, .trace h3 {
-  border-left: solid 20px #333;
-  padding: 10px;
+  border-left: solid 15px #333;
+  padding: 2px 5px;
+  margin-top: 120px;
 }
+
+.illustrator h4, .photoshop h4, .trace h4 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.illustrator img, .photoshop img, .trace img {
+  width: 100%;
+}
+
+
+.illustrator img:hover, .photoshop img:hover, .trace img:hover {
+  transition: .3s;
+  filter: grayscale(80%);
+ }
+
+
+ .illustrator-flex, .photoshop-flex, .trace-flex {
+   display: flex;
+   justify-content: space-between;
+ }
+/* <!----- illustrator  END -------> */
 
 /* <!-- ------------------- work END---------------------- --> */
 /* <!-- ---------------------- blog ---------------------- --> */
